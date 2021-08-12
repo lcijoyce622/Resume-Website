@@ -46,7 +46,7 @@ export default {};
 footer {
   z-index: 20;
   background-color: initial;
-  padding-bottom: 1rem;
+  // padding-bottom: 1rem;
   ul {
     position: fixed;
     bottom: 0;
@@ -78,6 +78,9 @@ footer {
     margin: 15px auto 0;
     background-color: #646464;
   }
+  p{
+    padding-bottom: 1rem;
+  }
   @media (max-width: 991.98px) {
     ul {
       position: relative;
@@ -85,7 +88,7 @@ footer {
       grid-auto-flow: column;
       bottom: unset;
       right: unset;
-      width: 70%;
+      width: 100%;
       margin: auto;
       li {
           margin: 0;

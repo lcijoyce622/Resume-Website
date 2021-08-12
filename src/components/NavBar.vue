@@ -23,10 +23,8 @@
         "
         id="navbarNavAltMarkup"
       >
-        <div class="navbar-nav">
-          <a class="nav-link tab " aria-current="page" href="#aboutme"
-            >About</a
-          >
+        <div @click="closeNav" class="navbar-nav">
+          <a class="nav-link tab" aria-current="page" href="#aboutme">About</a>
           <a class="nav-link tab" href="#experience">Experiences</a>
           <a class="nav-link tab" href="#skills">Skills</a>
           <a class="nav-link tab" href="#portfolio">Portfolio</a>
@@ -37,7 +35,14 @@
   </nav>
 </template>
 <script>
-export default {};
+export default {
+  methods: {
+    closeNav() {
+      var navMain = document.getElementById("navbarNavAltMarkup");
+      navMain.classList.remove("show");
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -48,33 +53,29 @@ export default {};
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   -moz-backdrop-filter: blur(2px);
-  z-index: 20;
-  // color: blue;
+  z-index: 99;
   a {
-    // color: white;
     margin: 0 20px;
-    
   }
- 
-  .tab{
+
+  .tab {
     position: relative;
   }
- .tab:before {
+  .tab:before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0%;
     height: 10%;
-    // background-color: rgb(255, 203, 243);
-    background-color:  #ffd2ec;
+    background-color: #ffd2ec;
     opacity: 0.8;
     transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
   }
 
- .tab:hover {
+  .tab:hover {
     color: #fff;
     border-color: #fff;
 
@@ -82,6 +83,5 @@ export default {};
       width: 100%;
     }
   }
-  
 }
 </style>
