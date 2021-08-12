@@ -1,5 +1,9 @@
 # resume-with-vue
 
+## Demo：
+
+https://lcijoyce622.github.io/Resume-Website/
+
 ## Project setup
 ```
 npm install
