@@ -122,11 +122,11 @@ export default {
       }
       .aboutbtn {
         //  font-size: clamp(10px, 5vw, 30px);
-        font-weight: bolder;
+        // font-weight: 600;
         border: 2px solid #cf9e94;
         position: relative;
         overflow: hidden;
-        display: inline-block;
+        // display: inline-block;
         z-index: 1;
         border-radius: 10rem;
         padding: 1rem 2.5rem;
@@ -154,7 +154,7 @@ export default {
         color: #fff;
         border-color: #fff;
         box-shadow: 0 10px 15px #8d8d8d;
-
+        font-weight: 600;
         &:before {
           width: 100%;
         }

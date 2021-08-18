@@ -7,9 +7,12 @@
           <div class="cover"></div>
           <img class="avatar" src="../assets/photo.png" alt="" />
         </div>
-        <div data-aos="fade-up"
-     data-aos-duration="1000" class="col-12 col-lg-8 mt-2">
-          <ul >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="col-12 col-lg-8 mt-2"
+        >
+          <ul>
             <li>
               {{ paragraph1 }}
             </li>
@@ -63,7 +66,6 @@ section {
   width: 100%;
   padding: 100px 0;
 
- 
   .photo {
     position: relative;
     img {
@@ -126,11 +128,10 @@ section {
     .photo {
       img {
         filter: none;
-         width: 60%;
+        width: 60%;
         border-radius: 50%;
         float: none;
-            box-shadow: 0px 10px 13px #8b6f69;
-
+        box-shadow: 0px 10px 13px #8b6f69;
       }
       margin-bottom: 1rem;
     }

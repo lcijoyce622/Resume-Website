@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar p-3 sticky-top navbar-expand-lg navbar-dark">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"
         ><img src="../assets/logo.svg" alt="" width="40"
@@ -55,11 +55,13 @@ export default {
   -moz-backdrop-filter: blur(2px);
   z-index: 99;
   a {
+    color: aliceblue !important;
     margin: 0 20px;
   }
 
   .tab {
     position: relative;
+    padding:10px 20px;
   }
   .tab:before {
     content: "";
@@ -68,16 +70,15 @@ export default {
     left: 0;
     width: 0%;
     height: 10%;
-    background-color: #ffd2ec;
     opacity: 0.8;
+    background-color: #a04b7b;
     transition: all 0.3s;
-    border-radius: 10rem;
+    border-radius: 50%;
     z-index: -1;
   }
 
   .tab:hover {
-    color: #fff;
-    border-color: #fff;
+    color: #a04b7b !important;
 
     &:before {
       width: 100%;

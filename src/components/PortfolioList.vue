@@ -24,6 +24,14 @@ export default {
   data() {
     return {
       portfolioArr: [
+         {
+          url: "https://lcijoyce622.github.io/Chat-Room/",
+          imgUrl: "chatroom.svg",
+          title: "Chatroom App",
+          context: "使用Firebase realtime database製作google帳號登入的簡易聊天室",
+          arr: ["Firebase","Vue3", "Bootstrap"],
+          content2: true,
+        },
         {
           url: "https://lcijoyce622.github.io/Calculator-App-with-Vue3/",
           imgUrl: "calculator.svg",
@@ -65,6 +73,7 @@ export default {
           arr: ["JavaScript", "JQuery", "Bootstrap", "AOS", "Swiper"],
           content2: false,
         },
+        
       ],
     };
   },
