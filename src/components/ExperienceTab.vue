@@ -159,7 +159,7 @@ export default {
   letter-spacing: 4px;
   line-height: 2rem;
   padding: 10rem 0;
-  min-height: 80vh;
+  min-height: 100vh;
   overflow-x: hidden;
   h1 {
     letter-spacing: 10px;

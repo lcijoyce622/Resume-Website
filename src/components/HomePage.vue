@@ -159,7 +159,7 @@ export default {
       }
       .aboutbtn {
         //  font-size: clamp(10px, 5vw, 30px);
-        // font-weight: 600;
+        font-weight:bolder;
         border: 2px solid #cf9e94;
         position: relative;
         overflow: hidden;
