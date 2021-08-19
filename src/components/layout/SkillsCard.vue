@@ -27,7 +27,7 @@ export default {
   box-shadow: 4px 6px 10px #8b6f69;
   display: flex;
   flex-direction: columns;
-  color: #646464;
+  color: rgb(136, 104, 104);
   .icon {
     margin: 0 auto;
     height: 100px;

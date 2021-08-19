@@ -116,7 +116,7 @@ export default {
     padding: 12px;
     border: none;
     border-bottom: 2px solid #c79a91;
-    // color: white;
+    color: #886868;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;

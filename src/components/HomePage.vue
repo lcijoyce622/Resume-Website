@@ -25,8 +25,7 @@
             class="btn btn-lg aboutbtn"
             href="#aboutme"
             role="button"
-            >About Me<BootstrapIcon size="2x" icon="arrow-down"
-          /></a>
+            >About Me<BootstrapIcon  icon="question-lg"/></a>
         </div>
       </div>
     </div>
@@ -77,17 +76,55 @@ export default {
       position: relative;
       color: white;
       p {
-        color: #3e4452;
+        color: #886868;
       }
       .header {
+        position: relative;
         margin-bottom: 16px;
         font-size: clamp(40px, 8vw, 80px);
         font-weight: bold;
         animation-duration: 1s;
         animation-fill-mode: both;
         animation-iteration-count: 1;
+        display: inline-block;
       }
+      .header:after {
+        content: "Chia-yi Lin";
+        color: transparent;
+        background: -webkit-linear-gradient(
+          to right,
+          #f9ffd4,
+          #d4faff,
+          #fed3ff
+        );
+        background: -o-linear-gradient(to right, #f9ffd4, #d4faff, #fed3ff);
+        background: -moz-linear-gradient(to right, #f9ffd4, #d4faff, #fed3ff);
+        background: linear-gradient(to right, #f9ffd4, #d4faff, #fed3ff);
 
+        -webkit-background-clip: text;
+        background-clip: text;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+        animation: spotlight 5s infinite;
+      }
+      @keyframes spotlight {
+        0% {
+          -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+          clip-path: ellipse(100px 100px at 0% 50%);
+        }
+
+        50% {
+          -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+          clip-path: ellipse(100px 100px at 100% 50%);
+        }
+        100% {
+          -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+          clip-path: ellipse(100px 100px at 0% 50%);
+        }
+      }
       .header:hover {
         animation-name: rubberBand;
       }
@@ -140,11 +177,10 @@ export default {
         left: 0;
         width: 0%;
         height: 100%;
-        // background-color: #dd909a;
-        background: -webkit-linear-gradient(160deg, #fdc3cc, #dd909a);
-        background: -o-linear-gradient(160deg, #fdc3cc, #dd909a);
-        background: -moz-linear-gradient(160deg, #fdc3cc, #dd909a);
-        background: linear-gradient(160deg, #fdc3cc, #dd909a);
+        background: -webkit-linear-gradient(160deg,#ffbfa2, #ffd3f2);
+        background: -o-linear-gradient(160deg,#ffbfa2, #ffd3f2);
+        background: -moz-linear-gradient(160deg,#ffbfa2, #ffd3f2);
+        background: linear-gradient(160deg,#ffbfa2, #ffd3f2);
         transition: all 0.3s;
         border-radius: 10rem;
         z-index: -1;
@@ -153,7 +189,7 @@ export default {
       .aboutbtn:hover {
         color: #fff;
         border-color: #fff;
-        box-shadow: 0 10px 15px #8d8d8d;
+        box-shadow: 0px 10px  10px #f8c0c0;
         font-weight: 600;
         &:before {
           width: 100%;

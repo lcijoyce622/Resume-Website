@@ -3,9 +3,13 @@
     <div class="container">
       <h1 class="mb-5">Experiences</h1>
       <div class="row justify-content-evenly">
-        <div data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine" id="tab_list" class="tab_list col-lg-3 col-12">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          id="tab_list"
+          class="tab_list col-lg-3 col-12"
+        >
           <button
             v-for="tab in tabArr"
             :key="tab.thisTab"
@@ -17,9 +21,12 @@
           </button>
         </div>
 
-        <div data-aos="fade-left"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine" class="content_list col-lg-6 col-12 mt-3 mt-lg-0">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          class="content_list col-lg-6 col-12 mt-3 mt-lg-0"
+        >
           <div v-for="(item, index) in contentArr" :key="index">
             <div v-if="clickTab == item.tab">
               <div v-for="(content, idx) in item.content" :key="idx">
@@ -73,11 +80,10 @@ export default {
               painting等作品。 從零開始的ui/ux設計與網站功能。`,
             },
             {
-              subtitle: "Bootstrap開發、撰寫CSS/SCSS",
+              subtitle: "Bootstrap使用、撰寫CSS/SCSS",
               context: `使用Bootstrap的元件和工具加上SCSS幫助開發，加強撰寫網頁的能力與完整度。
               使用swiper、AOS等套件讓動畫更加順暢。
-              參考codepen，利用parallax等設計讓畫面更精緻。 利用Figma製作設計稿
-              設計履歷網站。`,
+              參考codepen，利用parallax等設計讓畫面更精緻。利用Figma製作設計稿，設計履歷網站。`,
             },
           ],
         },
@@ -85,16 +91,20 @@ export default {
           tab: "tab3",
           content: [
             {
-              subtitle: "山野閃靈專題",
-              context: `負責功能開發與程式碼整合。
-              使用javascript、HTML5、scss、css3、jquery、bootstrap撰寫。`,
+              subtitle: "RWD響應式網頁撰寫",
+              context: ` 使用Bootstrap快速開發RWD功能，撰寫網站，並將其內化為基本能力，完成網站撰寫，整理作品集。
+              設計網站ui/ux與動畫以完整內容。`,
             },
             {
-              subtitle: "RWD響應式網頁撰寫",
-              context: ` 使用Bootstrap快速開發RWD功能 撰寫履歷網站
-              完成靜態網站撰寫，整理作品集。
-              設計網站ui/ux與動畫、HTML5、scss、css3、jquery、bootstrap撰寫。
-              RWD響應式網頁設計。`,
+              subtitle: "山野閃靈專題",
+              context: `負責功能開發與程式碼整合。
+              使用javascript、HTML5、scss、css3、jquery、bootstrap撰寫。
+              利用swiper套件呈現內容資訊，並與設計師溝通協調從規劃網站地圖、
+              製作wireframe到完成專案。`,
+            },
+            {
+              subtitle: "履歷網站",
+              context: `利用先前課程所學，完成自己的履歷網站作品，並加入動畫及作品集。 `,
             },
           ],
         },
@@ -102,17 +112,14 @@ export default {
           tab: "tab4",
           content: [
             {
-              subtitle: "持續進修網頁前端",
-              context: `使用Udemy學習Vue3。 使用VUE CLI開發專案。 使用github pages
-              demo作品。`,
-            },
-            {
-              subtitle: "撰寫學習筆記",
-              context: ` 在NOTION裡整理筆記教學。`,
+              subtitle: "持續進修網頁前端架構",
+              context: `使用Udemy學習Vue3。 並使用VUE CLI開發專案，並學習使用vuex、router、composition api。 使用github pages
+              demo作品。使用firebase realtime database與專案連結。`,
             },
             {
               subtitle: "撰寫Side Project",
-              context: ` 參加網路夏令營開發Side Project。`,
+              context: ` 開發Side Project，並利用網路資源、教學完整作品功能，
+              寫出todo-list、計算機、簡易聊天室，詳細內容請看portfolio。`,
             },
           ],
         },
@@ -167,12 +174,15 @@ export default {
     border-right: 2px solid;
     padding: 0;
     animation-duration: 2s;
-
+    h4 {
+      font-weight: bold;
+    }
     .isChoose {
       color: #8b7381;
       background-color: #ffede9;
       box-shadow: 0 2px 10px #ddb9b3;
       border-radius: 50px;
+
       h4:before {
         content: "▹ ";
         left: 0;
@@ -209,6 +219,9 @@ export default {
   .content_list {
     // margin-left: 2rem;
     text-align: start;
+    h4 {
+      font-weight: bold;
+    }
   }
   @media (max-width: 991.98px) {
     #tab_list::-webkit-scrollbar-track {

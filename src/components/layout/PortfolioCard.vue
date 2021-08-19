@@ -50,7 +50,7 @@ export default {
       top: 0;
       width: 60%;
       height: 100%;
-      background-color: rgba(255, 227, 236, 0.8);
+      background-color: rgba(241, 228, 228, 0.8);
       // opacity: 0.8;
       transition-duration: 0.5s;
       backdrop-filter: blur(5px);
@@ -115,7 +115,7 @@ export default {
     padding: 20px 30px;
     border-radius: 10px;
     letter-spacing: 3px;
-    color: #646464;
+    color: rgb(136, 104, 104);
     box-shadow: 4px 6px 10px #8b6f69;
   }
 }

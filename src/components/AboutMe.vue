@@ -40,13 +40,12 @@ export default {
   data() {
     return {
       paragraph1:
-        "你好，我是林珈誼，畢業於靜宜大學資訊工程學系，擅長Java、Javascript、Vue3、Html5、Css、JQuery。",
+        "Hi！我是林珈誼，畢業於靜宜大學資訊工程學系，擅長Java、Javascript、Vue3、Html5、Css、JQuery。",
       paragraph2: ` 開發畢業專題APP〝line
-              up〞，用於解決傳統排隊問題，在專案中負責客戶端的前端功能撰寫，並與團隊組員共同規劃整體介面及資料串接。
+              up〞，此專案用於解決傳統排隊問題，在專案中我負責客戶端的前端功能撰寫，並與團隊組員共同規劃整體介面及資料串接。
               參加校外競賽獲得南開科技大學行動與智慧終端創新應用競賽佳作。`,
       paragraph3: `畢業後，由於對於網頁開發較有興趣，學習了RWD前端網頁設計課程，從學習設計(PS、AI)開始到規劃Wireframe、前端切版、再到網頁前端功能，
-              使用JavaScript、JQuery、HTML5開發專案，近期更為了增進技術在Udemy上學習Vue3，並利用網路資源完成side
-              project。`,
+              使用JavaScript、JQuery、HTML5開發專案，為了更增進技術在Udemy上學習Vue3，並利用網路資源完成side project。`,
       liArray: [
         "Vue3",
         "Java",

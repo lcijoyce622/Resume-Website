@@ -54,17 +54,17 @@ export default {
           toolslist: [
             "Vue CLI",
             "Visual Studio",
-            "Bootstrap",
             "Github",
             "Github Pages",
+            "Firebase"
           ],
         },
         {
           icon: "palette",
           title: "DESIGN",
-          about: "設計UI/UX、修圖、繪畫、Mockup、MattePainting",
+          about: "設計UI/UX、修圖、繪畫、Mockup、MattePainting，心智圖規劃",
           list: ["UX/UI", "Web", "Wireframe", "Logos"],
-          toolslist: ["PhotoShop", "Illustrator", "Figma"],
+          toolslist: ["PhotoShop", "Illustrator", "Figma","Xmind"],
         },
       ],
     };

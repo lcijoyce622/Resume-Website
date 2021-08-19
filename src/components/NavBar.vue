@@ -49,7 +49,7 @@ export default {
 .navbar {
   justify-content: space-between;
   letter-spacing: 4px;
-  background: #cc9a9aad;
+  background: #da9f9fad;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   -moz-backdrop-filter: blur(2px);
