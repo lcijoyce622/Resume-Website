@@ -93,14 +93,20 @@ export default {
 
   background-color: #f8f8f8f8;
   opacity: 1;
-  background-image: radial-gradient(
-    #ffd3d3 1.9500000000000002px,
-    #f8f8f8f8 1.9500000000000002px
-  );
-  background-size: 39px 39px;
+  // background-image: radial-gradient(
+  //   #ffd3d3 1.9500000000000002px,
+  //   #f8f8f8f8 1.9500000000000002px
+  // );
+  // background-size: 39px 39px;
   padding:4rem 0;
   h1 {
     letter-spacing: 10px;
   }
 }
+ @media (max-width: 991.98px) {
+   #portfolio {
+    //  width: unset;
+     margin: 0 1rem;
+   }
+ }
 </style>

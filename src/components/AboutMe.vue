@@ -124,6 +124,9 @@ section {
     list-style: none;
   }
   @media (max-width: 991.98px) {
+    ul{
+       letter-spacing: 1px;
+    }
     .photo {
       img {
         filter: none;

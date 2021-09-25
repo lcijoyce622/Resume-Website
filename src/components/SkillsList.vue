@@ -75,8 +75,21 @@ export default {
 #skills {
   width: 100%;
   padding: 4rem 0;
+   background-image: radial-gradient(
+    #ffd3d3 1.9500000000000002px,
+    #f8f8f8f8 1.9500000000000002px
+  );
+  background-size: 39px 39px;
   h1 {
     letter-spacing: 10px;
   }
 }
+ @media (max-width: 991.98px) {
+   #skills {
+     width: unset;
+     margin: 0 1rem;
+    
+   }
+ }
+
 </style>

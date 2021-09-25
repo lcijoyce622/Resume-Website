@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" >
+  <section id="contact">
     <div class="container">
       <h1 class="mb-3">Contact Me</h1>
       <div class="row justify-content-center">
@@ -45,6 +45,27 @@
             </textarea>
 
             <input class="send" type="submit" value="Send" />
+
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+              <div
+                id="liveToast"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="d-flex">
+                  <div class="toast-body">Email Sent Successfully!</div>
+                  <button
+                 @click="closeToast"
+                    type="button"
+                    class="btn-close me-2 m-auto"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -65,16 +86,6 @@ export default {
   },
   methods: {
     sendEmail(e) {
-      console.log(e);
-      if (
-        this.name == "" ||
-        this.email == "" ||
-        this.subject == "" ||
-        this.message == ""
-      ) {
-        alert("請確實填寫聯繫內容");
-        return;
-      }
       try {
         emailjs.sendForm(
           "service_10m4cnh",
@@ -90,13 +101,20 @@ export default {
         );
       } catch (error) {
         console.log({ error });
+        return;
       }
       // Reset form field
+      var toast = document.getElementById("liveToast");
+      toast.classList.add("show");
       this.name = "";
       this.email = "";
       this.subject = "";
       this.message = "";
     },
+    closeToast(){
+       var toast = document.getElementById("liveToast");
+      toast.classList.remove("show");
+    }
   },
 };
 </script>

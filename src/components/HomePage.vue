@@ -177,10 +177,10 @@ export default {
         left: 0;
         width: 0%;
         height: 100%;
-        background: -webkit-linear-gradient(160deg,#ffbfa2, #ffd3f2);
-        background: -o-linear-gradient(160deg,#ffbfa2, #ffd3f2);
-        background: -moz-linear-gradient(160deg,#ffbfa2, #ffd3f2);
-        background: linear-gradient(160deg,#ffbfa2, #ffd3f2);
+        background: -webkit-linear-gradient(160deg,#ffba9a, #ffc9ef);
+        background: -o-linear-gradient(160deg,#ffba9a, #ffc9ef);
+        background: -moz-linear-gradient(160deg,#ffba9a, #ffc9ef);
+        background: linear-gradient(160deg,#ffba9a, #ffc9ef);
         transition: all 0.3s;
         border-radius: 10rem;
         z-index: -1;
@@ -189,7 +189,7 @@ export default {
       .aboutbtn:hover {
         color: #fff;
         border-color: #fff;
-        box-shadow: 0px 10px  10px #f8c0c0;
+        box-shadow: 10px 10px  10px #b39090;
         font-weight: 600;
         &:before {
           width: 100%;

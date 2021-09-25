@@ -19,11 +19,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card {
+  
   height: 100%;
   letter-spacing: 2px;
-  background-color: #faeaec;
+  // background-color: #fff1f360;
+   background: -webkit-linear-gradient(160deg, #ffd3f288, #ffae8880);
+  background: -o-linear-gradient(160deg, #ffd3f288, #ffae8880);
+  background: -moz-linear-gradient(160deg, #ffd3f288, #ffae8880);
+  background: linear-gradient(160deg, #ffd3f288, #ffae8880);
+  
   padding: 2rem 3rem;
-
   box-shadow: 4px 6px 10px #8b6f69;
   display: flex;
   flex-direction: columns;
@@ -57,4 +62,19 @@ export default {
     }
   }
 }
+.card:hover{
+  transform:scale(1.05);
+  transition: all 0.1s ;
+}
+  @media (max-width: 991.98px) {
+    .card{
+        letter-spacing: 1px;
+    }
+.card:hover{
+  transform:scale(1);
+  // transition: all 0.1s ;
+}
+
+  }
+
 </style>

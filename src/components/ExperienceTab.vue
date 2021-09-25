@@ -158,7 +158,7 @@ export default {
 #experience {
   letter-spacing: 4px;
   line-height: 2rem;
-  padding: 10rem 0;
+  padding: 10rem 0 0 0;
   min-height: 100vh;
   overflow-x: hidden;
   h1 {
@@ -176,10 +176,15 @@ export default {
     animation-duration: 2s;
     h4 {
       font-weight: bold;
+      margin: 0;
     }
     .isChoose {
+      margin: 30px 0;
       color: #8b7381;
-      background-color: #ffede9;
+      background: -webkit-linear-gradient(120deg, #ffccc0, #fcebe7, #fad3e6);
+      background: -o-linear-gradient(120deg, #ffccc0, #fcebe7, #fad3e6);
+      background: -moz-linear-gradient(120deg, #ffccc0, #fcebe7, #fad3e6);
+      background: linear-gradient(120deg, #ffccc0, #fcebe7, #fad3e6);
       box-shadow: 0 2px 10px #ddb9b3;
       border-radius: 50px;
 
@@ -223,48 +228,57 @@ export default {
       font-weight: bold;
     }
   }
-  @media (max-width: 991.98px) {
-    #tab_list::-webkit-scrollbar-track {
-      border-radius: 10px;
-      background-color: #d8bfbf;
-    }
-
-    #tab_list::-webkit-scrollbar {
-      height: 8px;
-    }
-
-    #tab_list::-webkit-scrollbar-thumb {
-      border-radius: 80px;
-      background-color: #ffffff94;
-    }
-    #tab_list {
-      overflow-y: hidden;
-      overflow-x: scroll;
-    }
-    .tab_list {
-      flex-direction: row;
-      height: unset;
-      border-right: none;
-      white-space: nowrap;
-      .isChoose {
-        // color: ivory;
-        background-color: unset;
-        box-shadow: none;
-
-        .after {
-          width: 90%;
-          height: 3px;
-          left: 0;
-        }
+ 
+}
+ @media (max-width: 991.98px) {
+    #experience {
+      padding: 2rem 0;
+      margin: 0 1rem;
+      min-height: unset;
+       letter-spacing: 1px;
+      #tab_list::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #d8bfbf;
       }
-      button {
-        .after {
-          width: 0;
-          height: 0;
-          margin: auto;
+
+      #tab_list::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      #tab_list::-webkit-scrollbar-thumb {
+        border-radius: 80px;
+        background-color: #ffffff94;
+      }
+      #tab_list {
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
+      .tab_list {
+        flex-direction: row;
+        height: unset;
+        border-right: none;
+        white-space: nowrap;
+        .isChoose {
+          margin: 0;
+        
+          box-shadow: none;
+border-radius:15px 15px ;
+          .after {
+            width: 0;
+            height: 0;
+            left: 0;
+          }
+        }
+        button {
+          padding: 10px 10px;
+         
+          .after {
+            width: 0;
+            height: 0;
+            margin: auto;
+          }
         }
       }
     }
   }
-}
 </style>
