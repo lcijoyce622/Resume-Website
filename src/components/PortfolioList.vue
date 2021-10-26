@@ -73,14 +73,14 @@ export default {
           arr: ["JavaScript", "Bootstrap"],
           content2: false,
         },
-        {
-          url: "https://leopardcatpublic.github.io/",
-          imgUrl: "石虎網站擷取.svg",
-          title: "山野閃靈",
-          context: "宣導石虎危機的議題，負責前端功能設計、撰寫，以及程式碼整合。",
-          arr: ["JavaScript", "JQuery", "Bootstrap", "AOS", "Swiper"],
-          content2: true,
-        },
+        // {
+        //   url: "https://leopardcatpublic.github.io/",
+        //   imgUrl: "石虎網站擷取.svg",
+        //   title: "山野閃靈",
+        //   context: "宣導石虎危機的議題，負責前端功能設計、撰寫，以及程式碼整合。",
+        //   arr: ["JavaScript", "JQuery", "Bootstrap", "AOS", "Swiper"],
+        //   content2: true,
+        // },
         
       ],
     };
